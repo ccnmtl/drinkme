@@ -1,0 +1,30 @@
+
+--------------------------
+Requirements: python 2.5
+Tested on: Ubuntu Linux (Feisty), but should work anywhere that Paste
+works. 
+--------------------------
+
+To install, check out code: 
+
+  % svn co http://microapps.googlecode.com/svn/drinkme/trunk/ drinkme
+
+initialize a workingenv: 
+
+  % cd drinkme
+  % ./init.sh .
+
+init.sh takes the directory to put the workingenv in as its only
+argument. It will create a workingenv and install all the necessary
+(and included) eggs into it. 
+
+edit development.ini, prod.ini, or copy one of those to a different
+file and configure to your liking (change port #, etc.)
+
+run it: 
+
+  % ./start.sh . prod.ini
+
+Drinkme is also a WSGI/Paste app, so you should be able to combine it
+with any other WSGI frameworks, servers, etc. in a standard manner. 
+
