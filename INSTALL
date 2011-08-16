@@ -7,16 +7,13 @@ works.
 
 To install, check out code: 
 
-  % svn co http://microapps.googlecode.com/svn/drinkme/trunk/ drinkme
+  % git clone git://github.com/ccnmtl/drinkme.git
 
 initialize a workingenv: 
 
   % cd drinkme
-  % ./init.sh .
-
-init.sh takes the directory to put the workingenv in as its only
-argument. It will create a workingenv and install all the necessary
-(and included) eggs into it. 
+  % ./bootstrap.py
+  % ./ve/bin/python setup.py develop
 
 edit development.ini, prod.ini, or copy one of those to a different
 file and configure to your liking (change port #, etc.)

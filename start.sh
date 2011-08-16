@@ -1,4 +1,4 @@
 #!/bin/bash
 cd $1
-source working-env/bin/activate
-exec working-env/bin/paster serve $2
+source ve/bin/activate
+exec ve/bin/paster serve $2
